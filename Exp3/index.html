@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="gif.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Cakelicious</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: white;"><i class="fas fa-birthday-cake"></i> CakeBazaar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATEGORIES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Cakes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cup Cakes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Brownies</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Pastries</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="content" id="blur">
+    <br><br>
+    <!-- <h1 style="text-align: center;"><img src="./logo.png" ></h1> -->
+    <div class="list">
+        <div class="car">
+            <button class="btn" onclick="details(1)"><img src="images/cake1.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(2)"><img src="images/cake2.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(3)"><img src="images/cake3.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(4)"><img src="images/cake4.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(5)"><img src="images/cake5.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(6)"><img src="images/cake6.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(7)"><img src="images/cake7.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(8)"><img src="images/cake8.jpg"></button>
+        </div>
+        <div class="car">
+            <button class="btn" onclick="details(9)"><img src="images/cake9.jpg"></button>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+<footer style="text-align: center; color: white; background-color: #4d3319; padding-top: 12px; padding-bottom: 6px;">
+    <p><i class="far fa-copyright"></i> Copyrights Reserved. Cakelicious.Ltd </p>
+    
+</footer>
+<!--  -->
+<span class="details" id="1" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake1.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(1)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+           
+            <ul>
+                <li><h2>Belgian Chocholate  <img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 350</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 600</li><br>
+                    
+                </ul>
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="2" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake2.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(2)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Unicorn Cake  <img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 450</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 820</li><br>
+                  
+                </ul>
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="3" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake3.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(3)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Marshmellow cake <img src="./images/veg.png" style="margin-top: 4px;">  <img src="./images/nonveg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 410</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 800</li><br>
+                    
+                </ul>
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="4" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake4.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(4)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Chocochip Cupcakes <img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>&#8377; 40(per piece)</li>
+                </ul>
+                
+                <li><h2>Chocochip Cupcakes <img src="./images/nonveg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>&#8377; 60(per piece)</li>
+                </ul>
+                
+
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="5" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake5.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(5)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Wedding Cake <img src="./images/nonveg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    
+                    <li>3 kg: &#8377; 1800</li><br>
+                   
+                </ul>
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="6" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake6.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(6)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Butterscotch Cake <img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 410</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 800</li><br>
+                </ul>
+
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="7" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake7.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(7)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Strawberry Oreo<img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 450</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 830</li><br>
+                </ul>
+
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="8" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake8.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(8)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Dutch cake <img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 370</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 700</li><br>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</span>
+<span class="details" id="9" style="display:none;">
+    <div class="det">
+        <div><img class="img" src="images/cake9.jpg"></div>
+        <div class="p" style="margin-left: 25px;  text-align: left;">
+            <button onclick="off(9)" style=" border: none; background-color: none; float: right; margin-right: 10px;"><i class="fa fa-times"></i> </button>
+           <br>
+            <ul>
+                <li><h2>Blueberry cake <img src="./images/veg.png" style="margin-top: 4px;"></h2></li>
+                <ul>
+                    <li>Half kg: &#8377; 370</li><br>
+                   
+               
+                    <li>Full kg: &#8377; 700</li><br>
+                </ul>
+
+            </ul>
+        </div>
+    </div>
+</span>
+<!--  -->
+<script type="text/javascript">
+       
+    function details() {
+        var x = document.getElementById(arguments[0]);
+        var y = document.getElementById('blur');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.opacity=0.2;
+                x.style.opactiy=1;
+            }
+            else {
+                x.style.display = "none";
+                y.style.opacity=1;
+            }       
+
+        }
+    function off(){
+        var x = document.getElementById(arguments[0]);
+        var y = document.getElementById('blur');
+        x.style.display = "none";
+        y.style.opacity=1;
+    }
+</script>
+<!--  -->
+</body>
+</html>

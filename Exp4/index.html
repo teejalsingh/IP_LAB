@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration page</title>
+    <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form onsubmit="return submitted()">
+        <br>
+        <h2>Registration</h2>
+        <label>Username:</label><br>
+        <input id="username" placeholder="Enter name" maxlength="20" required><br>
+        <label>Password:</label><br>
+        <input id="password" type="password" placeholder="enter password" minlength="8" required><br>
+        <label>Email:</label><br>
+        <input id="email" type="email" placeholder="enter email" required><br>
+        <label>Birth Date:</label><br>
+        <input id="birthdate" type="date" placeholder="enter dob" required><br>
+        <label>City:</label><br>
+        <select id="city" required>
+            <option value="">--Select--</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Agra">Agra</option>
+        </select><br>
+        <label>Programming Languages known:</label><br>
+        <input type="checkbox" onclick="language('C')">C<br>
+        <input type="checkbox" onclick="language('C++')">C++<br>
+        <input type="checkbox" onclick="language('Java')">Java<br>
+        <input type="checkbox" onclick="language('JavaScript')">JavaScript<br>
+        <input type="checkbox" onclick="language('Python')">Python<br>
+        <div style="text-align: center;">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+    <script>
+        var languages=[];
+        function submitted(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            var email=document.getElementById("email").value;
+            var date=document.getElementById("birthdate").value;
+            var city=document.getElementById("city").value;
+            var passReg = {upper: /[A-Z]/,lower: /[a-z]/,number: /[0-9]/,space: /\s/};
+            if (!(passReg.upper.test(password) && passReg.lower.test(password) && passReg.number.test(password) && !passReg.space.test(password))){
+                alert("At least one uppercase letter, one lowercase letter and one number Required!! No spaces allowed!!");
+                return false;
+            }else if (!email.match(/.+@.+\..+/)) {
+                alert("Invalid Email Format!!");
+                return false;
+            }else{
+                var s="";
+                s+=("Username: "+username);
+                s+=("\nPassword: "+password);
+                s+=("\nEmail: "+email);
+                s+=("\nBirth date: "+date);
+                s+=("\nCity: "+city);
+                s+=("\nProgramming Languages known: ");
+                languages.sort();
+                s+=languages;
+                alert(s);
+            }
+        }
+        function language(val){
+            if(languages.indexOf(val)<0){
+                languages.push(val);
+            }else{
+                languages.pop(languages.indexOf("val"));
+            }
+        }
+    </script>
+</body>
+</html>
